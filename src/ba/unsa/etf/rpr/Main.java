@@ -1,7 +1,28 @@
 package ba.unsa.etf.rpr;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import static javafx.application.Application.launch;
+import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
+
+public class Main extends Application {
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/zadaca2.fxml"));
+        primaryStage.setTitle("Korisnici");
+        primaryStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+        primaryStage.setMinHeight(291);
+        primaryStage.setMinWidth(414);
+        primaryStage.show();
+    }
+
+
     public static void main(String[] args) {
-        System.out.println("Sretno sa rješavanjem zadaće 2!");
+        launch(args);
     }
 }
