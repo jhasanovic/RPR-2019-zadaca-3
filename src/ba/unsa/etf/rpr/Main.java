@@ -13,7 +13,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/zadaca2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/novi.fxml"));
         primaryStage.setTitle("Studenti");
         primaryStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         primaryStage.setMinHeight(291);
@@ -25,12 +25,4 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
-    /*Alert alert = new Alert(AlertType.ERROR);
-      alert.setTitle("Neispravno ime");
-      alert.setHeaderText("Neispravno ime studenta");
-      alert.setContentText("Ime studenta treba biti najmanje 10 karaktera dugačko");
-
-      alert.showAndWait();
-*/
 }
