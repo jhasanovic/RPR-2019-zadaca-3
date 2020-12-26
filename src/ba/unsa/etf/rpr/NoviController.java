@@ -17,7 +17,7 @@ public class NoviController {
 
     public void okBtnClick(ActionEvent actionEvent) {
         //ako nema 10 karaktera u imenu, prikazati alert
-        if (fldIme.getText().isEmpty()) {
+        if (fldIme.getLength()<10) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Neispravno ime");
             alert.setHeaderText("Neispravno ime studenta");

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="298.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.NoviController">
+   <stylesheets>
+       <URL value="@progresnaTraka.css" />
+   </stylesheets>
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.20001220703125" minWidth="10.0" prefWidth="82.40001220703125" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.59996337890624" minWidth="10.0" prefWidth="200.79998779296875" />
@@ -19,7 +23,7 @@
         <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Unesite ime studenta (minimalno 10 karaktera):" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
         <Label text="Ime i prezime: " GridPane.rowIndex="1" />
         <TextField fx:id="fldIme" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <ProgressBar prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
         <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
             <buttons>
                 <Button fx:id="okBtn" defaultButton="true" mnemonicParsing="false" onAction="#okBtnClick" text="Ok" />
