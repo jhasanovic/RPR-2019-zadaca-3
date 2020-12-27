@@ -4,22 +4,24 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.ZadacaController">
+<GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controller.ZadacaController">
     <stylesheets>
         <URL value="@/css/tipke.css" />
     </stylesheets>
     <columnConstraints>
+        <ColumnConstraints />
         <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" prefWidth="250.39999694824218" />
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.20006408691404" minWidth="0.0" prefWidth="163.20000305175785" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints maxHeight="194.79999389648438" minHeight="10.0" prefHeight="57.20001831054688" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="364.3999961853027" minHeight="10.0" prefHeight="169.99998168945314" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="194.79999389648438" minHeight="10.0" prefHeight="43.200006103515626" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="364.3999961853027" minHeight="10.0" prefHeight="188.79999389648438" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="70.99998779296874" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <GridPane alignment="CENTER" hgap="3.0" prefHeight="192.0" prefWidth="150.0" vgap="3.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+        <GridPane alignment="CENTER" hgap="3.0" prefHeight="192.0" prefWidth="150.0" vgap="3.0" GridPane.columnIndex="2" GridPane.columnSpan="2147483647" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" />
                 <ColumnConstraints hgrow="SOMETIMES" />
@@ -32,30 +34,52 @@
                 <RowConstraints vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button fx:id="sevenBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button fx:id="fourBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button fx:id="eightBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button fx:id="nineBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button fx:id="fiveBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button fx:id="sixBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button fx:id="oneBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button fx:id="twoBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button fx:id="threeBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button fx:id="zeroBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                <Button fx:id="sevenBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="7" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="fourBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="4" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="eightBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="nineBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="fiveBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="sixBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="oneBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="twoBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="threeBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+                <Button fx:id="zeroBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </padding>
         </GridPane>
-        <ListView fx:id="lvStudents" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
-        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2">
-            <buttons>
-                <TextField fx:id="fldText" alignment="CENTER_RIGHT" editable="false" />
-                <Slider fx:id="sliderStudents" max="15.0" min="5.0" showTickLabels="true" showTickMarks="true" />
-                <ChoiceBox fx:id="choiceColor" />
-                <Button fx:id="unosBtn" mnemonicParsing="false" onAction="#unosClick" text="Unos studenta" />
-            </buttons>
-        </ButtonBar>
+        <ListView fx:id="lvStudents" prefWidth="248.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
+        <HBox prefHeight="100.0" prefWidth="409.0" GridPane.columnIndex="1" GridPane.columnSpan="2">
+            <children>
+                <TextField fx:id="fldText" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="51.0" HBox.hgrow="NEVER">
+                    <HBox.margin>
+                        <Insets left="5.0" right="3.0" />
+                    </HBox.margin>
+                </TextField>
+                <Slider fx:id="sliderStudents" max="15.0" maxHeight="-Infinity" maxWidth="-Infinity" min="5.0" prefHeight="38.0" prefWidth="117.0" showTickLabels="true" showTickMarks="true" HBox.hgrow="NEVER">
+                    <HBox.margin>
+                        <Insets right="3.0" />
+                    </HBox.margin>
+                </Slider>
+                <ChoiceBox fx:id="choiceColor" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="122.0" HBox.hgrow="NEVER">
+                    <HBox.margin>
+                        <Insets right="3.0" />
+                    </HBox.margin>
+                </ChoiceBox>
+                <Button fx:id="unosBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#unosClick" prefHeight="26.0" prefWidth="87.0" text="Unos studenta" HBox.hgrow="NEVER">
+                    <HBox.margin>
+                        <Insets left="3.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Button>
+            </children>
+         <GridPane.margin>
+            <Insets top="3.0" />
+         </GridPane.margin>
+        </HBox>
     </children>
     <padding>
         <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />

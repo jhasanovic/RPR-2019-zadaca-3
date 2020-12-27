@@ -1,0 +1,9 @@
+.zeleneTipke {
+    -fx-background-color: green;
+}
+.crveneTipke {
+    -fx-background-color: red;
+}
+.plaveTipke {
+    -fx-background-color: blue;
+}

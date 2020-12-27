@@ -1,4 +1,4 @@
-package ba.unsa.etf.rpr;
+package ba.unsa.etf.rpr.controller;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -45,14 +45,11 @@ public class ZadacaController {
     colors.add("Zelena");
     colors.add("Plava");
     choiceColor.setItems(colors);
-        listViewData.add("Lydia");
-        listViewData.add("Anna");
-        listViewData.add("Stefan");
-        listViewData.add("Martin");
-        listViewData.add("Martin");
-        listViewData.add("Martin");
-        listViewData.add("Martin");
-        listViewData.add("Martin");
+        listViewData.add("Student1");
+        listViewData.add("Student2");
+        listViewData.add("Student3");
+        listViewData.add("Student4");
+        listViewData.add("Student5");
 
         lvStudents.setItems(listViewData);
         choiceColor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
@@ -157,6 +154,7 @@ public class ZadacaController {
         Parent root= FXMLLoader.load(getClass().getResource("/fxml/novi.fxml"));
         stage.setTitle("Unos studenta");
         stage.setScene(new Scene(root,USE_COMPUTED_SIZE,USE_COMPUTED_SIZE));
+        stage.setResizable(false);
         stage.show();
     }
 }
