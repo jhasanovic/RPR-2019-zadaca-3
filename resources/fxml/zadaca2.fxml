@@ -28,16 +28,16 @@
                 <RowConstraints vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-                <Button maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                <Button fx:id="sevenBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                <Button fx:id="fourBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                <Button fx:id="eightBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="8" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                <Button fx:id="nineBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                <Button fx:id="fiveBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                <Button fx:id="sixBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                <Button fx:id="oneBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                <Button fx:id="twoBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                <Button fx:id="threeBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                <Button fx:id="zeroBtn" maxHeight="38.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#numberClick" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -46,10 +46,10 @@
         <ListView fx:id="lvStudents" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS" />
         <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2">
             <buttons>
-                <TextField fx:id="fldText" editable="false" />
+                <TextField fx:id="fldText" alignment="CENTER_RIGHT" editable="false" />
                 <Slider fx:id="sliderStudents" max="15.0" min="5.0" showTickLabels="true" showTickMarks="true" />
                 <ChoiceBox fx:id="choiceColor" />
-                <Button mnemonicParsing="false" text="Unos studenta" />
+                <Button fx:id="unosBtn" mnemonicParsing="false" text="Unos studenta" />
             </buttons>
         </ButtonBar>
     </children>
