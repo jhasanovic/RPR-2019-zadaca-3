@@ -30,7 +30,6 @@ public class ZadacaController {
     private ListView<String> lvStudents;
     private ObservableList<String> listViewData = FXCollections.observableArrayList();
 
-
     public ObservableList<String> getColors() {
         return colors;
     }
@@ -52,6 +51,7 @@ public class ZadacaController {
         listViewData.add("Student5");
 
         lvStudents.setItems(listViewData);
+
         choiceColor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
                 @Override
                 public void changed(ObservableValue<? extends String> observableValue, String o, String n) {
@@ -141,6 +141,7 @@ public class ZadacaController {
                     }
                 }
             });
+
 
     }
 

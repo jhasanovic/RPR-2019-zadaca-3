@@ -20,8 +20,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/zadaca2.fxml"));
         primaryStage.setTitle("Studenti");
         primaryStage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
-        primaryStage.setMinHeight(291);
-        primaryStage.setMinWidth(414);
+        primaryStage.setMinHeight(340);
+        primaryStage.setMinWidth(415);
 
         primaryStage.show();
     }
