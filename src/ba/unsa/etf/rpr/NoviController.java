@@ -27,7 +27,7 @@ public class NoviController {
                     progressBar.getStyleClass().add("crveniProgress");
                 } else {
                     progressBar.getStyleClass().removeAll("crveniProgress");
-                    progressBar.setProgress(n.length());
+                    progressBar.setProgress(n.length()/10.);
                     progressBar.getStyleClass().add("zeleniProgress");
                 }
             }
