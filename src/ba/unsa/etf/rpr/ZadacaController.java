@@ -6,12 +6,15 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
+
+import static javafx.scene.control.PopupControl.USE_COMPUTED_SIZE;
 
 public class ZadacaController {
     private ObservableList<String> colors= FXCollections.observableArrayList();
@@ -21,6 +24,12 @@ public class ZadacaController {
     private Button zeroBtn,oneBtn,twoBtn,threeBtn,fourBtn,fiveBtn,sixBtn,sevenBtn,eightBtn,nineBtn;
     @FXML
     private ChoiceBox choiceColor;
+    @FXML
+    private Slider sliderStudents;
+    @FXML
+    private ListView<String> lvStudents;
+    private ObservableList<String> listViewData = FXCollections.observableArrayList();
+
 
     public ObservableList<String> getColors() {
         return colors;
@@ -36,7 +45,16 @@ public class ZadacaController {
     colors.add("Zelena");
     colors.add("Plava");
     choiceColor.setItems(colors);
+        listViewData.add("Lydia");
+        listViewData.add("Anna");
+        listViewData.add("Stefan");
+        listViewData.add("Martin");
+        listViewData.add("Martin");
+        listViewData.add("Martin");
+        listViewData.add("Martin");
+        listViewData.add("Martin");
 
+        lvStudents.setItems(listViewData);
         choiceColor.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
                 @Override
                 public void changed(ObservableValue<? extends String> observableValue, String o, String n) {
@@ -126,10 +144,19 @@ public class ZadacaController {
                     }
                 }
             });
+
     }
 
     public void numberClick(ActionEvent actionEvent) {
         String number=((Button)actionEvent.getSource()).getText();
         fldText.setText(fldText.getText()+number);
+    }
+
+    public void unosClick(ActionEvent actionEvent) throws IOException {
+        Stage stage=new Stage();
+        Parent root= FXMLLoader.load(getClass().getResource("/fxml/novi.fxml"));
+        stage.setTitle("Unos studenta");
+        stage.setScene(new Scene(root,USE_COMPUTED_SIZE,USE_COMPUTED_SIZE));
+        stage.show();
     }
 }

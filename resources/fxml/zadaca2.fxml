@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import java.net.URL?>
 <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="291.0" prefWidth="415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.ZadacaController">
     <stylesheets>
         <URL value="@/css/tipke.css" />
@@ -53,7 +53,7 @@
                 <TextField fx:id="fldText" alignment="CENTER_RIGHT" editable="false" />
                 <Slider fx:id="sliderStudents" max="15.0" min="5.0" showTickLabels="true" showTickMarks="true" />
                 <ChoiceBox fx:id="choiceColor" />
-                <Button fx:id="unosBtn" mnemonicParsing="false" text="Unos studenta" />
+                <Button fx:id="unosBtn" mnemonicParsing="false" onAction="#unosClick" text="Unos studenta" />
             </buttons>
         </ButtonBar>
     </children>
