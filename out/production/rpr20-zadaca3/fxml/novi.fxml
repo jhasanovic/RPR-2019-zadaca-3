@@ -7,7 +7,7 @@
 
 <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="298.0" vgap="5.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.NoviController">
    <stylesheets>
-       <URL value="@progresnaTraka.css" />
+       <URL value="@/css/progresnaTraka.css" />
    </stylesheets>
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.20001220703125" minWidth="10.0" prefWidth="82.40001220703125" />
