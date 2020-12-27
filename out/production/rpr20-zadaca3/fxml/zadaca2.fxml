@@ -16,7 +16,7 @@
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.20006408691404" minWidth="0.0" prefWidth="163.20000305175785" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints maxHeight="194.79999389648438" minHeight="10.0" prefHeight="43.200006103515626" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="194.79999389648438" prefHeight="43.200006103515626" vgrow="ALWAYS" />
         <RowConstraints maxHeight="364.3999961853027" minHeight="10.0" prefHeight="188.79999389648438" vgrow="SOMETIMES" />
         <RowConstraints maxHeight="1.7976931348623157E308" prefHeight="70.99998779296874" vgrow="SOMETIMES" />
     </rowConstraints>
@@ -77,7 +77,7 @@
                 </Button>
             </children>
          <GridPane.margin>
-            <Insets top="3.0" />
+            <Insets bottom="3.0" top="3.0" />
          </GridPane.margin>
         </HBox>
     </children>

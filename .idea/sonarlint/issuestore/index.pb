@@ -17,7 +17,13 @@ A
 +out/production/rpr20-zadaca3/fxml/novi.fxml,d\8\d8d96733d3d90abed1270dd9d92c68049a03f220
 ^
 .out/production/rpr20-zadaca3/fxml/zadaca2.fxml,f\9\f9c418465c81937cfd4537a3944f9d18861a04f4
-W
-'src/ba/unsa/etf/rpr/NoviController.java,c\e\ce13b6094365e7177866b3feda3c8f1b12c1d97b
-Y
-)src/ba/unsa/etf/rpr/ZadacaController.java,c\9\c98bf3c641fb4d1f038d83ea3153b30f587bc0fa
+c
+3out/production/rpr20-zadaca3/css/progresnaTraka.css,9\3\935f633174eb4b2458f26b3ad15957446cde8e58
+Z
+*out/production/rpr20-zadaca3/css/tipke.css,0\b\0be4346c32a7e1a7202a806cc054e036dab35c87
+H
+resources/fxml/novi.fxml,2\b\2ba873fe1a0f758dfc0c90ec155701a033c97fc7
+d
+4src/ba/unsa/etf/rpr/controller/ZadacaController.java,a\b\ab92b49f1d95d915e19e14208d4910fa06a001d2
+b
+2src/ba/unsa/etf/rpr/controller/NoviController.java,3\0\3062dad861c35b188d390a0e801b3355c05a81d9
