@@ -148,7 +148,7 @@ public class ZadacaController {
                if(n>=listViewData.size()){
                    if(n==15) n--;
 
-               for(int redniBroj=6;redniBroj<=n;redniBroj++)
+               for(int redniBroj=listViewData.size()+1;redniBroj<=n;redniBroj++)
                    listViewData.add("Student"+redniBroj);
 
                if(newValue.intValue()==15)
@@ -157,7 +157,7 @@ public class ZadacaController {
                else{
                    if(listViewData.size()>=15)
                        listViewData.removeAll("Student"+fldText.getText());
-                   for(int i=5;i<listViewData.size();i++)//u listi uvijek ostati barem 5 studenata
+                   for(int i=n+1;i<listViewData.size();i++)//u listi uvijek ostati barem 5 studenata
                        listViewData.removeAll("Student"+i);
                }
         }
