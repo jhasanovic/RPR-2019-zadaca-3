@@ -29,7 +29,7 @@ public class ZadacaController {
     @FXML
     private ListView<String> lvStudents;
     private ObservableList<String> listViewData = FXCollections.observableArrayList();
-
+    private ObservableList<String> temp = FXCollections.observableArrayList();
     public ObservableList<String> getColors() {
         return colors;
     }
@@ -141,8 +141,27 @@ public class ZadacaController {
                     }
                 }
             });
+        sliderStudents.valueProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+               int n=newValue.intValue();
+               if(n>=listViewData.size()){
+                   if(n==15) n--;
 
+               for(int redniBroj=6;redniBroj<=n;redniBroj++)
+                   listViewData.add("Student"+redniBroj);
 
+               if(newValue.intValue()==15)
+                   listViewData.add("Student"+fldText.getText());//unos posljednjeg studenta
+            }
+               else{
+                   if(listViewData.size()>=15)
+                       listViewData.removeAll("Student"+fldText.getText());
+                   for(int i=5;i<listViewData.size();i++)//u listi uvijek ostati barem 5 studenata
+                       listViewData.removeAll("Student"+i);
+               }
+        }
+        });
     }
 
     public void numberClick(ActionEvent actionEvent) {
